@@ -1,0 +1,26 @@
+I decided to make a Fortune teller program.  The program asks a user to select a number between 1 and 5 and returns a fortune based on their input. It uses 3 different functions as instructed to encapsulate key behaviors like input collection, validation, and message display.
+
+
+Having multiple functions allowed me to make sure each one is simple having one job, and the job is validated after done. The different functions also allow  me to be able to no repeat myself and focus instead on keeping it simple and documenting role well.
+
+
+1.get_choices()
+
+Prompt the user to enter a number between 1 and 5 and validate that input. Includes input validation using try/except and a loop to enforce valid input.
+
+
+2.tell_fortune(decisions)
+
+Using the user’s selected number to look up and display a fortune. Using a dictionary to map integers to fortune messages, just like in the sandwich maker exercises.
+
+
+3.Main()
+
+The driver function that initiates the program flow by calling get_choices() and tell_fortune().
+
+
+
+Violated 🫸🏿
+Repetitive in the main function shifting between what is asked instead of using a dictionary. Code is not simple and has bad input handling, using int(int("")). The code doesn't have validation, code also doesn't have nice modularity, doc strings or structure.
+
+
