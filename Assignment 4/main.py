@@ -9,6 +9,7 @@ class Item(BaseModel):
         price: float
         is_offer: Union[bool, None] = None
 
+#reading root
 @app.get("/")
 def read_root():
         return {"Hello": "World"}
